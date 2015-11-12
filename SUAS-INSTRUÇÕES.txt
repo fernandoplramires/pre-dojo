@@ -1,2 +1,64 @@
-Coloque aqui suas instruções ou comentários que ache útil/relevantes para possamos ler 
-quando estivermos avaliando a sua solução
+Ola, bom dia.
+
+==================================================================================================================
+* Resolucao
+==================================================================================================================
+
+Solucionei o desafio, treinando a arquitetura REST, no caso implementei-a, utilizando um framework Spring-Boot.
+Optei por esta solucao, pois estou estudando no momento estes framework. Junto a este framework, adicionei uma
+camada de banco de dados utilizando os framework Spring-Data e Hibernate num banco de dados embarcado, no caso,
+HSQLDB. Novamente, utilizei apenas para a pratica/treino. Para resolver as dependencias optei pelo Maven, na qual
+utilizo em meus projetos. 
+
+==================================================================================================================
+* Um overview dos packages do projeto:
+==================================================================================================================
+
+controller 	-> Classe @Controller: POST e HandleException.
+convert	   	-> Classe @Component: Conversao das classes domain para os objetos DTO.
+domain	   	-> Classes Domain: Usando Pattern Gateway, isolando as entitys e manipulando mais de uma.
+dto	   	-> Classes DTO: Geracao de saida, isolando as classes domain e entitys
+entity	   	-> Classes @Entity: Utilizadas junto ao repositorio.
+exception  	-> Classes Exception.
+infrastructure	-> Classe main/start/config.
+parser		-> Classe @Component: Utilizada para fazer o parseamento do arquivo de log.
+report		-> Classe @Component: Utilizada para gerar os relatorios de partidas.
+repository	-> Classe @Repository: Persistencia no banco de dados, no caso as interface do Spring-Data.
+service		-> Classe @Service: Fluxo logico / Integracao das chamadas das classes @Component.
+validator	-> Classe @Component: Validacao basica no arquivo de log, antes de parsear.
+
+==================================================================================================================
+* Execucao:
+==================================================================================================================
+
+No diretorio do projeto, com um terminal/prompt aberto, execute: "mvn clean test spring-boot:run"
+
+==================================================================================================================
+* Testes da aplicacao:
+==================================================================================================================
+
+Para testar a aplicacao, no diretorio do projeto na pasta tst, tem as instrucoes de execucoes,
+juntamente com um arquivo demo na qual utilizei durante o desenvolvimento e o aplicativo curl para Windows,
+no caso: 
+
+==================================================================================================================
+* Observacoes:
+==================================================================================================================
+
+Minhas classes de testes estao inacabadas, nao pude usufruir de um bom tempo para implementar devido a 
+contra-tempos pessoais. No inicio, comecei o desenvolvimento praticando o TDD, fazendo para as classes 
+parser e validade, utilizando JUnit, Mockito e Hamcrest. Nao é uma pratica que recomendo, pular o TDD  mas, 
+tive que optar por este caminho devido ao tempo disponivel para solucionar o desafio.
+
+Commit unico, fiz apenas um commit devido a utilizar o bitbucket como repositorio pessoal, como o projeto no
+Bitbucket consta um nome diferente, optei apenas por copiar o projeto/classes/diretorio da minha ultima versao, 
+para do diretorio do fork do github e realizar o commit apenas 1 vez diretamente.
+
+==================================================================================================================
+* Contato:
+==================================================================================================================
+
+E-mail -> fernando.pl.ramires@gmail.com
+
+Atenciosamente,
+Ramires, Fernando
