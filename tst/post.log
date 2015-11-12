@@ -1,0 +1,56 @@
+C:\Users\Fernando\Developer\Repositories\Local\Eclipse Projects\dojomaster\tst>curl -v -X POST -F "gameFileLog=@game.log" http://localhost:8084/dojomaster/sendGameLog
+* Adding handle: conn: 0x151de50
+* Adding handle: send: 0
+* Adding handle: recv: 0
+* Curl_addHandleToPipeline: length: 1
+* - Conn 0 (0x151de50) send_pipe: 1, recv_pipe: 0
+* About to connect() to localhost port 8084 (#0)
+*   Trying 127.0.0.1...
+* Connected to localhost (127.0.0.1) port 8084 (#0)
+> POST /dojomaster/sendGameLog HTTP/1.1
+> User-Agent: curl/7.33.0
+> Host: localhost:8084
+> Accept: */*
+> Content-Length: 1039
+> Expect: 100-continue
+> Content-Type: multipart/form-data; boundary=------------------------de0fe301076eade3
+>
+< HTTP/1.1 100 Continue
+< HTTP/1.1 201 Created
+* Server Apache-Coyote/1.1 is not blacklisted
+< Server: Apache-Coyote/1.1
+< Content-Type: text/plain;charset=UTF-8
+< Content-Length: 1906
+< Date: Thu, 12 Nov 2015 02:35:25 GMT
+<
+
+*=================================================================*
+| MATCHID: 11348965                                               |
+|=================================================================|
+| RANK | PLAYER                                   | KILLS | DEATH |
+|=================================================================|
+| #001 | Roman                                    |     4 |     0 |
+| #002 | Fred                                     |     1 |     1 |
+| #002 | Roger                                    |     1 |     1 |
+| #002 | Adrian                                   |     1 |     1 |
+| #003 | Noriko                                   |     1 |     2 |
+| #004 | Oliver                                   |     0 |     1 |
+| #004 | Paul                                     |     0 |     1 |
+| #005 | Nick                                     |     0 |     2 |
+|=================================================================|
+| Best Weapon used for the Winner:  M16                           |
+| Humilhation Award for the Winner: true                          |
+*=================================================================*
+
+*=================================================================*
+| MATCHID: 11348966                                               |
+|=================================================================|
+| RANK | PLAYER                                   | KILLS | DEATH |
+|=================================================================|
+| #001 | Rob                                      |     2 |     1 |
+| #002 | Peter                                    |     1 |     2 |
+|=================================================================|
+| Best Weapon used for the Winner:  AWP                           |
+| Humilhation Award for the Winner: false                         |
+*=================================================================*
+* Connection #0 to host localhost left intact

@@ -1,0 +1,2 @@
+TERMINAL-> ~dojomaster/: 		mvn clean test spring-boot:run
+TERMINAL-> ~dojomaster/tst/: 	curl -v -X POST -F "gameFileLog=@game.log" http://localhost:8084/dojomaster/sendGameLog
